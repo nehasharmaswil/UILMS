@@ -1,0 +1,271 @@
+@media (max-width: 1299px){
+    .SSO_dashboard_left_section{
+        padding: 20px 40px;
+    }
+
+    .SSO_dashboard_left_section_box_heading h5{
+        font-size: 18px;
+    }
+  }
+
+  @media (max-width: 1199px){
+    .SSO_dashboard_left_section {
+        padding: 10px 10px;
+    }
+
+    .SSO_dashboard_left_section {
+       margin: 30px 30px 50px 30px;
+       
+    }
+
+    .tableFirstColSmall {
+        width: 90px;
+        min-width: 90px;
+    }
+
+    .tableColSmall{
+        width: 70px;
+        min-width: 70px;   
+    }
+
+    .ssoYellowBtn {
+        width: 154px;
+        height: 32px;
+        margin-right: 60px;
+    }
+  }
+
+  @media (max-width: 991px){
+    .SSO_dashboard_right_section{
+        height: 100%;
+    }
+
+    .sideBar {
+        position: absolute;
+        z-index: 100;
+    }
+
+    .ssoSidebarListItem a h6 {
+        font-size: 12px;
+    }
+
+    .ssoToggleBtn{
+        display: flex;
+    }
+
+    .ssoRoleOuterBox{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .ssoFormLeft{
+        width: 100%;
+    }
+
+    .ssoFormRight{
+        width: 100%;
+    }
+
+    .ssoForminnerBox{
+        flex-direction: column;
+    }
+
+    .ssoFormOuterBox{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .ssoinnerBoxFooterRight{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .ssoinnerBoxFooterLeft{
+        width: 100%;
+    }
+
+    .ssoHeading h2 {
+        font-size: 18px;
+    }
+
+    .ssoBtn{
+        font-size: 14px;
+    }
+
+
+    /* *****************************APP DETAIL*********************************** */
+
+    .tableColWidth{
+        font-size: 13px;
+}
+
+.tableFirstColWidth{
+    font-size: 13px;
+}
+    
+  }
+
+
+  @media (max-width: 667px){
+    .SSO_dashboard_left_section_box{
+        width: 50%;
+    }
+
+    .ssoBtn{
+        padding: 0px 15px;
+    height: 34px;
+    }
+    
+    .tableHeader {
+         margin-bottom: 10px;
+        
+    }
+
+    .tableFirstColWidth {
+        width: 110px;
+        min-width: 110px;
+    }
+
+    .tableColWidth {
+       width: 120px;
+        min-width: 120px;
+    }
+
+    .tableColWidth {
+       font-size: 13px;
+    }
+
+    .SSO_dashboard_left_section {
+        margin: 30px 10px 50px 10px;
+    }
+
+    .SSO_dashboard_left_section_box{
+        width: 29%;
+    }
+
+    .SSO_dashboard_left_section {
+        margin: 30px 30px 50px 30px;
+    }
+
+    .SSO_dashboard_left_section_box_heading h5 {
+        font-size: 16px;
+    }
+
+    .ssoHeaderRight img {
+        width: 22px;
+        margin-right: 20px;
+    }
+
+    .profile {
+        width: 30px;
+        height: 30px;
+    }
+
+    .ssoYellowBtn {
+        width: 158px;
+        height: 32px;
+        margin-right: 30px;
+        font-size: 15px;
+    }
+  
+   
+  }
+
+  @media (max-width: 567px){
+    .ssoHeading{
+        display: none;
+    }
+
+    .RoleCheckBox {
+       
+        flex-wrap: wrap;
+       
+    }
+    
+    .ssoLeftBox .nav-link{
+        font-size: 14px;
+    }
+
+    .ssoBtn {
+        padding: 0px 10px;
+        height: 28px;
+    }
+   
+.ssoBtn {
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 480px){
+   
+    #side_Bar {
+        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    #sideBarContent{
+        width: 100%;
+    }
+
+    .SSO_dashboard_left_section_box{
+        width: 40%;
+        height: 150px;
+    }
+
+    .SSO_dashboard_left_section {
+        margin: 20px 10px 50px 10px;
+    }
+
+    .SSO_dashboard_left_section{
+        width: 95%;
+    }
+
+    .SSO_dashboard_left_section_box_heading{
+        height: 30%;
+    }
+
+    .SSO_dashboard_left_section_box_icon{
+        height: 70%;
+    }
+
+    .SSO_dashboard_right_section_header img {
+        width: 60%;
+    }
+
+    .SSO_dashboard_right_section {
+        
+        padding: 10px 15px 25px 15px;
+       
+    }
+
+    .SSO_dashboard_right_section_header p{
+        font-size: 12px;
+    }
+
+    .SSO_dashboard_left_section_box {
+      
+        height: 110px;
+    }
+
+    .ssoLeftBox .nav-link {
+        font-size: 13px;
+        padding: 8px 6px;
+    }
+
+    .tableHeader{
+        padding: 0px 10px 0px 10px;
+    }
+
+    .ssoBtn {
+        font-size: 10px;
+    }
+   
+    .ssoBtn {
+        padding: 0px 8px;
+        height: 25px;
+    }
+
+  
+  
+  }

@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>SWIL</title>
+</head>
+
+<body>
+    <header>
+        <div class="ssoHeader">
+            <div class="ssoHeaderBox">
+                <div class="ssoLogo">
+                    <div class="ssoToggleBtn" onclick="width()" id="ssoToggle">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <a href="index.html"><img class="img-fluid" src="images/swil_logo.png" alt="error" /></a>
+                </div>
+                <div class="ssoHeading">
+                    <h2>Softworld (India) private limited</h2>
+                </div>
+                <div class="ssoHeaderRight">
+                    <img class="img-fluid" src="images/notification.png" alt="error" />
+                    <!-- <div class="profile">
+                        A
+                    </div> -->
+                    <div class="dropdown">
+                        <button class="profile btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            A
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="ssoMainSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1 col-sm-2 col-xs-2 col-2 p-0" id="side_Bar">
+                    <div class="sideBar">
+                        <ul class="ssoSidebarList">
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #FD555D 0%, #FBA320 100%);"><a
+                                    href="branch.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/branch_icon.png"
+                                        alt="error" />
+                                    <h6>Branch</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #8D68FD 0%, #E361F8 100%);"><a href="role.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/role_icon.png" alt="error" />
+                                    <h6>Role</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #FDBEEB 0%, #F34FB4 100%);"><a href="user.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/user_icon.png" alt="error" />
+                                    <h6>User</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #11DFA1 0%, #027866 100%);"><a href="stock_location.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/stock_location_icon.png"
+                                        alt="error" />
+                                    <h6>Stock Location</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #5FD5FF 0%, #2463D4 100%);"><a
+                                    href="app_detail.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/app_detail_icon.png"
+                                        alt="error" />
+                                    <h6>App Detail</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 col-10" id="sideBarContent">
+                    <div class="ssoTableMainBox">
+                        <div class="tableHeader m-0">
+                            <div class="ssoLeftBox">
+                                <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">Branch Details</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">Additional
+                                            Details</button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="ssoRightBox mb-2">
+                                <a class="ssoBtn" href="#">Save
+                                    <div class="ssoBtnIcon">
+                                        <i class="bi bi-save2-fill"></i>
+                                </div>
+                                </a>
+                                <a class="ssoBtn ssoBtnGrey" href="#">Cancel
+                                    <div class="ssoBtnIcon">
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ssoFormMainBox">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="ssoForminnerBox">
+                                        <div class="ssoFormLeft">
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Branch Type</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Branch</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Number</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Alias</label>
+                                                </div>
+                                                <a href="#" class="ssoYellowBtn ms-3">Auto Generate</a>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Adderss</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Station</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Locality</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Pincode</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Phone</label>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="ssoFormRight">
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Website</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Contact Person</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Server Name</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>User Name</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Database</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Supplier</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Customer</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Mobile</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Fax</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ssoFormOuterBox w-100 mt-3 ">
+                                        <div class="ssoForminnerBox ssoinnerBoxFooterLeft ">
+                                            <div class="ssoFormLeft">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>GSTN</label>
+                                                    <div class="inputIcon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                      </svg></div>
+                                                </div>
+                                                <div class="form-check mt-2">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Composition
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="ssoFormRight">
+                                                <div class="inputWidthFull w-100 mt-3">
+                                                    <div class="material-textfield inputWidthHalf">
+                                                        <input class="w-100" placeholder=" " type="date">
+                                                        <label>Issued Date</label>
+                                                       
+                                                    </div>
+                                                    <div class="material-textfield w-50">
+                                                        <input class="w-100" placeholder=" " type="date">
+                                                        <label>Valid Till</label>
+                                                      
+                                                    </div>
+                                                </div>
+                                                <div class="inputWidthFull w-100 mt-3">
+                                                    <div class="material-textfield inputWidthHalf">
+                                                        <input class="w-100" placeholder=" " type="date">
+                                                        <label>Issued Date</label>
+                                                       
+                                                    </div>
+                                                    <div class="material-textfield w-50">
+                                                        <input class="w-100" placeholder=" " type="date">
+                                                        <label>Valid Till</label>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ssoForminnerBox ssoinnerBoxFooterRight flex-column">
+                                            <div class="material-textfield w-100 mt-3 ">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Port(Mobile App)</label>
+                                            </div>
+                                            <div class="material-textfield w-100 mt-2">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>No. of Users</label>
+                                            </div>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Editable party and series while import
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="ssoForminnerBox">
+                                    <div class="ssoFormLeft">
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Non Salable Location</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthMid">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>EDI Location (Web)</label>
+                                            </div>
+                                            <div class="material-textfield w-25">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>...</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ssoFormRight">
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Hold Location</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthMid">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>EDI Location (Web)</label>
+                                            </div>
+                                            <div class="material-textfield w-25">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>...</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ssoForminnerBoxHeader mt-4">
+                                    <h5>Licence Detail</h5>
+                                 </div>
+                                <div class="ssoForminnerBox " style="border-radius: 0px 0px 8px 8px;">
+                                     <div class="ssoFormLeft">
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Licence 1</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Licence 2</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Licence 3</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>PAN No.</label>
+                                            </div>
+                                        </div>
+                                        
+                                     </div>
+                                     <div class="ssoFormRight">
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+                                               
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+                                               
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+                                               
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+                                               
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+                                              
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+
+
+                            </div>
+                           
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="js/custom.js"></script>
+
+
+
+</body>
+
+</html>

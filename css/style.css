@@ -1,0 +1,784 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background: #f8f8f8;
+    height: 100vh;
+}
+
+
+
+.SSO_dashboard_left_section{
+    background-color: #fff;
+    width: 90%;
+    padding: 40px 70px;
+    margin: 50px 50px 50px 50px;
+   border-radius: 8px;
+    
+}
+
+.SSO_dashboard_left_section_box_inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
+.SSO_dashboard_left_section_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.SSO_dashboard_left_section_box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   width: 30%;
+   height: 186px;
+   border-radius: 8px;
+   margin: 20px 0px;
+   text-decoration: none;
+   transition: all 0.8s;
+}
+
+.SSO_dashboard_left_section_box:hover{
+    box-shadow: 2px 0px 60px rgb(0 0 0 / 15%);
+}
+
+.SSO_dashboard_left_section_box_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+}
+
+.SSO_dashboard_left_section_box_heading{
+    background: #00232323;
+   width: 100%;
+   height: 25%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SSO_dashboard_left_section_box_heading h5{
+    color: #fff;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.SSO_dashboard_left_section_box img{
+   width: 22%;
+}
+
+.SSO_dashboard_right_section{
+    background: linear-gradient(180deg, #D78CF3 0%, #7B88FE 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    padding: 10px 25px 25px 25px;
+    height: 100vh;
+}
+
+.SSO_dashboard_right_section_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.SSO_dashboard_right_section_header p{
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.SSO_dashboard_right_section_header img{
+    width: 65%;
+}
+
+.SSO_dashboard_right_section_list{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+.SSO_dashboard_right_section_company_info{
+    background: linear-gradient(180deg, #D896FA 0%, #B099F4 100%);
+    border-radius: 16px;
+    padding: 15px 20px 5px 20px;
+}
+
+.SSO_dashboard_right_section_heading h4{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.SSO_dashboard_right_section_heading{
+    position: relative;
+    margin-bottom: 26px;
+}
+
+.SSO_dashboard_right_section_heading::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.SSO_dashboard_right_section_company_info h2{
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.SSO_dashboard_right_section_list_item{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.SSO_dashboard_right_section_list_item_img{
+    background: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.SSO_dashboard_right_section_list_item_img img{
+    width: 15px;
+}
+
+.swil_contact_info{
+    margin-top: 40px;
+}
+
+.swil_social_links h5{
+   color: #fff;
+   font-size: 15px;
+}
+
+.swil_social_icon_list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.swil_social_icon_list li{
+    margin: 0px 5px;
+}
+
+.swil_social_icon_list_item img{
+  width: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* **********************************APP DETAIL PAGE CSS START****************************************** */
+
+.ssoLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ssoToggleBtn i{
+  font-size: 28px;
+}
+
+.ssoToggleBtn{
+    margin-right: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    display: none;
+}
+
+.ssoToggleBtn:focus i{
+  color: #BD1B70!important;
+}
+
+.fullWidth{
+    width: 100%!important;
+}
+
+.ssoLogo img{
+    width: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 50%;
+}
+
+.appDetailTable{
+    overflow: hidden!important;
+}
+
+.appDetailTableMain{
+   overflow-x: auto;
+   overflow-y: auto;
+   height: auto;
+}
+
+.ssoHeader{
+    background-color: #fff;
+    padding: 6px 20px;
+}
+
+.ssoHeading h2{
+    font-size: 20px;
+}
+
+.form-check-input:focus {
+   
+    box-shadow: none;
+}
+
+.form-check-input{
+    border: 2px solid #808080;
+    background-color: transparent;
+}
+
+.form-check-input:checked {
+    background-color: #BD1B70;
+    border-color: #BD1B70
+    ;
+}
+
+.ssoHeaderBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ssoHeaderRight img{
+    width: 26px;
+    margin-right: 25px;
+}
+
+.ssoHeaderRight{
+    display: flex;
+    align-items: center;
+
+}
+
+.profile{
+    width: 34px;
+    height: 34px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E92088;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: none;
+    border: none;
+}
+
+.profile:focus{
+    color: #fff;
+    background-color: #E92088;
+    border: none;
+    box-shadow: none;
+}
+
+.sideBar{
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    height: 90vh;
+    
+}
+
+.ssoSidebarList{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.ssoSidebarListItem a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ssoSidebarListItem a h6{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.ssoSidebarListItem{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+
+.ssoBtn{
+    background-color: #BD1B70;
+    color: #fff;
+    padding: 0px 25px;
+    height: 40px;
+    border-radius: 36px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid #BD1B70;
+    transition: 0.8s;
+}
+
+.ssoBtnIcon{
+    margin-left: 10px;
+}
+
+.ssoBtnIcon svg{
+    color: #BD1B70;
+}
+
+.ssoBtn:hover{
+    background-color: #fff;
+    color: #BD1B70;
+}
+
+.ssoLeftBox h6{
+    color: #BD1B70;
+}
+
+.ssoTableMainBox{
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    padding: 12px 0px 0px 0px;
+    margin-top: 10px;
+    height: auto;
+    
+}
+
+.accordion-item:first-of-type{
+    border-radius: 0px;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-item{
+    border: none;
+    border-radius: 0px;
+}
+
+.ssoBranchTableRow{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 0px 0px;
+}
+
+
+
+.ssoBranchTableRow .accordion-button:not(.collapsed){
+    width: 35px;
+    height: 35px;
+    background: #F5CADF;
+    box-shadow: none;
+    min-width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50%!important;
+    border-top-right-radius: 50%!important;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+}
+
+.ssoBranchTableRow .accordion-button::after{
+    color: #808080;
+}
+
+.branchAccordianBtn {
+    border-top-left-radius: 50%!important;
+    border-top-right-radius: 50%!important;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 35px;
+    height: 35px;
+    min-height: 35px;
+    box-shadow: none;
+    min-width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssoTableScroll{
+   height: 450px;
+    overflow: auto;
+    min-height: 500px;
+}
+
+.form-check-input{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px!important;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.accordion-body{
+    padding: 0px;
+    background-color: #FFE9F5;
+}
+
+
+
+/* **********************************APP DETAIL PAGE CSS END****************************************** */
+
+
+
+/* **********************************BRANCH PAGE CSS START****************************************** */
+
+.ssoBranchTableRowHeading tbody tr{
+    border-bottom: 1px solid #e7e7e7;
+}
+
+ .ssoBranchTableRowHeading tr td:first-child, .ssoBranchTableRowHeading tr th:first-child{
+    text-align: left;
+    vertical-align: middle;
+   padding-left: 15px;
+}
+
+.ssoBranchTableRowHeading thead{
+  border-bottom: 2px solid #e7e7e7;
+ 
+}
+
+.ssoBranchTableRowHeading{
+    overflow: auto;
+    min-height: 542px;
+    display: block;
+    margin: 0px;
+}
+
+.appDetailGrid{
+    min-height: inherit;
+}
+
+.ssoTableScroll .accordion-header {
+   border-bottom: 2px solid #e7e7e7;
+    height: 65px;
+}
+
+ tr th{
+   
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+   vertical-align: middle;
+   
+}
+
+.tableColWidth{
+   
+    font-weight: 600;
+    color: #202020;
+    font-size: 15px;
+    width: 146px;
+    min-width: 146px;
+}
+
+
+
+.tableFirstColWidth{
+    width: 200px;
+    min-width: 200px;    
+    padding: 0px 0px 0px 15px!important;
+    font-weight: 600;
+    color: #6B696C;
+    font-size: 15px;
+    text-align: left;
+}
+
+tr{
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.table-responsive{
+    width: 100%;
+}
+
+tr td{
+   
+    text-align: center;
+}
+
+.table{
+    border: none;
+}
+
+
+
+.table>:not(caption)>*>*{
+    border: none;
+}
+
+/* **********************************BRANCH PAGE CSS END****************************************** */
+
+
+
+/* **********************************BRANCH DETAIL PAGE CSS START****************************************** */
+
+
+.ssoFormMainBox{
+    background-color: #FBF1F7;
+    padding: 10px 20px 10px 20px;
+}
+
+.ssoForminnerBox{
+    background-color: #fff;
+    box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.05);
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-radius: 8px
+}
+
+.ssoRightBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssoBtnGrey{
+    background-color: #ECECEC;
+    color: #737373;
+    border-color:#ECECEC;
+    margin-left: 10px;
+}
+
+.ssoFormLeft{
+    width: 49%;
+}
+
+.ssoFormRight{
+    width: 49%;
+}
+  
+
+/* INPUT BOX CSS START */
+
+
+.material-textfield {
+    position: relative;  
+  }
+  
+  .material-textfield label {
+    position: absolute;
+    font-size: 14px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #808080;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+  .material-textfield input {
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #CACACA;
+    border-radius: 5px;  
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+    height: 34px;
+  }
+  .material-textfield input:focus {
+    border-color: #BD1B70;  
+  }
+  .material-textfield input:focus + label {
+    color: #BD1B70;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  .material-textfield input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+
+
+
+  
+
+  .inputWidthFull{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ .inputWidthHalf{
+    width: 49%;
+ }
+
+  
+
+
+  /* INPUT BOX CSS END */
+
+  .ssoYellowBtn{
+    background-color: #F3B844;
+    color: #fff;
+    border: 2px solid #F3B844;
+    border-radius: 4px;
+    width: 150px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.8s;
+    margin-right: 150px;
+  }
+
+  .ssoYellowBtn:hover{
+    background-color: #fff;
+    color: #F3B844;
+  }
+
+  .ssoFormOuterBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+  }
+
+  .ssoinnerBoxFooterLeft{
+    width: 69%;
+    height: 100%;
+  }
+
+  .ssoinnerBoxFooterRight{
+    width: 30%;
+    height: 100%;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: transparent;
+    border-bottom: 4px solid #BD1B70;
+    color: #BD1B70;
+    border-radius: 0px;
+  }
+
+  .nav-link{
+    color: #939393;
+  }
+
+  .inputIcon{
+    position: absolute;
+    right: 15px;
+    top: 4px;
+  }
+
+  .inputWidthMid{
+    width: 73%;
+  }
+
+  .ssoForminnerBoxHeader{
+    background-color: #F5CADF;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 15px;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+ /* **********************************BRANCH DETAIL PAGE CSS END****************************************** */
+
+
+  /* **********************************ROLE PAGE CSS START****************************************** */
+
+.RoleCheckBox{
+    display: flex;
+}
+
+.form-select:focus{
+    border-color: #BD1B70;
+    box-shadow: none;
+}
+
+.ssoRoleOuterBox{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+
+
+.ssoRoleOuterBox table{
+    border-radius: 6px 6px 0px 0px;
+}
+
+.ssoRoleTableScroll{
+    height: 150px;
+     overflow: auto;
+     min-height: 355px;
+ }
+
+ .ssoRoleTableScroll .accordion-button{
+    border-bottom: 1px solid #e7e7e7;
+ }
+
+
+
+
+   /* **********************************ROLE PAGE CSS END****************************************** */
