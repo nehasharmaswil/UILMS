@@ -898,12 +898,55 @@ tr td{
    /* **********************************ROLE PAGE CSS END****************************************** */
 
 
+    /* **********************************USER DETAIL PAGE CSS START****************************************** */
+
+.checkBoxOuter{
+    height: 170px;
+    overflow: auto;
+    max-height: 170px;
+}
+
+.userLocationCheckBox{
+    background-color: #fff;
+    /* border: 1px solid #e7e7e7; */
+    padding: 0px 0px 10px 0px;
+}
+
+.userLocationCheckBox h6{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FFE9F5;
+    color: #BD1B70;
+    padding: 10px 10px;
+}
+
+.inputWidthFull .form-check{
+    width: 33%;
+}
+
+.inputWidthFull .form-check label{
+    font-size: 14px;
+}
+
+.ssoFormHeader{
+    background-color: #FFE9F5;
+    padding: 8px 10px;
+}
+
+.ssoFormHeader h5{
+    color: #BD1B70;
+}
+
+     /* **********************************USER DETAIL PAGE CSS END****************************************** */
+
+
 
    /* **********************************Modal CSS Start****************************************** */
 
    .ssoModalHeader{
     background-color: #BD1B70;
     color: #fff;
+    padding: 6px 10px 8px 10px;
    }
 
    .ssoBtnClose{
@@ -912,6 +955,7 @@ tr td{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: -0.5rem 0.2rem -0.5rem auto!important;
    }
 
    .ssoBtnClose i{
@@ -926,16 +970,29 @@ tr td{
    .ssoModalInnerHeader{
     background-color: #FFE9F5;
     color: #BD1B70;
-    padding: 6px 10px 6px 10px;
+    padding: 2px 10px 2px 10px;
 
+   }
+
+   .ssoModalHeader h5{
+    font-size: 18px;
+   }
+
+   .ssoModalBody{
+    padding: 12px;
    }
 
    .ssoModalBodyInner{
     background-color: #fff;
-    box-shadow: 2px 0px 60px rgb(0 0 0 / 15%);
+    box-shadow: 2px 0px 60px rgb(0 0 0 / 6%);
     
    }
 
    .ssoModalInnerBox{
     padding: 0px 10px 10px 10px;
+   }
+
+   .ssoModalFooter{
+    padding: 0px 12px 7px 12px;
+    border-top: 0px;
    }

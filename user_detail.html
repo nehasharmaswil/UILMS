@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>SWIL</title>
+</head>
+
+<body>
+    <header>
+        <div class="ssoHeader">
+            <div class="ssoHeaderBox">
+                <div class="ssoLogo">
+                    <div class="ssoToggleBtn" onclick="width()" id="ssoToggle">
+                        <i class="bi bi-list"></i>
+                    </div>
+                    <a href="index.html"><img class="img-fluid" src="images/swil_logo.png" alt="error" /></a>
+                </div>
+                <div class="ssoHeading">
+                    <h2>Softworld (India) private limited</h2>
+                </div>
+                <div class="ssoHeaderRight">
+                    <img class="img-fluid" src="images/notification.png" alt="error" />
+                    <!-- <div class="profile">
+                        A
+                    </div> -->
+                    <div class="dropdown">
+                        <button class="profile btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            A
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="ssoMainSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1 col-sm-2 col-xs-2 col-2 p-0" id="side_Bar">
+                    <div class="sideBar">
+                        <ul class="ssoSidebarList">
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #FD555D 0%, #FBA320 100%);"><a
+                                    href="branch.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/branch_icon.png"
+                                        alt="error" />
+                                    <h6>Branch</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #8D68FD 0%, #E361F8 100%);"><a
+                                    href="role.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/role_icon.png" alt="error" />
+                                    <h6>Role</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #FDBEEB 0%, #F34FB4 100%);"><a
+                                    href="user.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/user_icon.png" alt="error" />
+                                    <h6>User</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #11DFA1 0%, #027866 100%);"><a
+                                    href="stock_location.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/stock_location_icon.png"
+                                        alt="error" />
+                                    <h6>Stock Location</h6>
+                                </a>
+                            </li>
+                            <li class="ssoSidebarListItem"
+                                style="background: linear-gradient(135deg, #5FD5FF 0%, #2463D4 100%);"><a
+                                    href="app_detail.html">
+                                    <img class="img-fluid" style="width: 20%;" src="images/app_detail_icon.png"
+                                        alt="error" />
+                                    <h6>App Detail</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 col-10" id="sideBarContent">
+                    <div class="ssoTableMainBox">
+                        <div class="tableHeader m-0">
+                            <div class="ssoLeftBox">
+                                <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">User Details</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-user-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-user" type="button" role="tab"
+                                            aria-controls="pills-user" aria-selected="false">Additional
+                                            Details</button>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="ssoRightBox mb-2">
+                                <a class="ssoBtn" href="#">Save
+                                    <div class="ssoBtnIcon">
+                                        <i class="bi bi-save2-fill"></i>
+                                    </div>
+                                </a>
+                                <a class="ssoBtn ssoBtnGrey" href="#">Cancel
+                                    <div class="ssoBtnIcon">
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </div>
+                                </a>
+
+                                <div class="dropdown ssoBrachSettings">
+                                    <button class="btn btn-secondary SettingsDrpdown dropdown-toggle" type="button"
+                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Settings
+                                    </button>
+                                    <ul class="dropdown-menu SettingsDrpdownMenu "
+                                        aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal" href="#">
+                                                <div class="dropdown-menuIcon"><i class="bi bi-envelope"></i></div>
+                                                Email Settings
+                                            </a>
+
+
+                                        </li>
+                                        <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal1" href="#">
+                                                <div class="dropdown-menuIcon"><i class="bi bi-bank"></i></div>
+                                                Bank Detail
+                                            </a></li>
+                                        <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal2" href="#">
+                                                <div class="dropdown-menuIcon"><i class="bi bi-chat-square-text"></i>
+                                                </div>
+                                                SMS Settings
+                                            </a></li>
+                                        <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal3" href="#">
+                                                <div class="dropdown-menuIcon"><i class="bi bi-whatsapp"></i></div>
+                                                Whatsapp Settings
+                                            </a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="ssoFormMainBox">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="ssoForminnerBox">
+                                        <div class="ssoFormLeft">
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Login ID</label>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Confirm Password</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Type</label>
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Employee</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Branch</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <!-- <label>Branch Type</label> -->
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Role</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <!-- <label>Branch Type</label> -->
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="date">
+                                                    <label>Expiry Date</label>
+    
+                                                </div>
+                                               
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Mobile</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Email/User ID</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-50">
+                                                    <select class="form-select " aria-label="Default select example">
+                                                        <option selected>Default Form</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <!-- <label>Branch Type</label> -->
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>
+                                                        Default Series</label>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="ssoFormRight">
+                                           
+                                           
+                                          
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield w-100">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected>Status</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <!-- <label>Branch Type</label> -->
+                                                </div>
+                                                <div class="material-textfield w-50">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>
+                                                        Print Count</label>
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Lock Days</label>
+                                                </div>
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="date">
+                                                    <label>Lock Date</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Report Lock Days</label>
+                                                </div>
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="date">
+                                                    <label>
+                                                        Report Lock Date</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="inputWidthFull w-100 mt-3">
+                                                <div class="material-textfield inputWidthHalf">
+                                                    <input class="w-100" placeholder=" " type="text">
+                                                    <label>Restricted Series Pfx</label>
+                                                </div>
+                                                <div class="form-check mt-2">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Allow Sales Above Credit Limit
+
+                                                    </label>
+                                                </div>
+                                               
+                                            </div>
+                                            <div class="userLocationCheckBox mt-4">
+                                                <h6>Location</h6>
+                                                <div class="checkBoxOuter">
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Sodala
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                           Jaipur
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Sodala
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                           Jaipur
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Sodala
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                         Jaipur
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Sodala
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Jaipur
+    
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mt-2 ms-2">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Sodala
+    
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-user" role="tabpanel"
+                                aria-labelledby="pills-user-tab">
+                                <div class="ssoForminnerBoxHeader mt-4">
+                                    <h5>Apply for Sales</h5>
+                                </div>
+                                <div class="ssoForminnerBox">
+                                    
+                                    <div class="ssoFormLeft">
+                                       
+                                        <div class="inputWidthFull w-100 mt-3 ">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Date
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2  ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Re Calculate Sale Rate
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2  ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Allow Add / Less
+                                                </label>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3  ">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Rate
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2 ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Number/Alias
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2  ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Cash Discount
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3 ">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Discount
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Only Reduse Discount
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2  ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Batch
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3 ">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit MRP
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2 ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Allow Product Selection
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2 ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Color
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3 ">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Allow Sales Below Cost 
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2 ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Promotion Product Qty
+                                                </label>
+                                            </div>
+                                            <div class="form-check mt-2  ">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Edit Payment Mode
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ssoFormRight">
+                                        <div class="inputWidthFull w-100 mt-3 ">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Maximum OverDue Days</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Increase OverDue Days By</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Increase Credit Limit (in %)</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Minimum OverDue Amount</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>Allow OverDue Bills</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <!-- <label>Branch Type</label> -->
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="ssoForminnerBoxHeader mt-4">
+                                    <h5>Licence Detail</h5>
+                                </div>
+                                <div class="ssoForminnerBox " style="border-radius: 0px 0px 8px 8px;">
+                                    <div class="ssoFormLeft">
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Licence 1</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Licence 2</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>Licence 3</label>
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield w-100">
+                                                <input class="w-100" placeholder=" " type="text">
+                                                <label>PAN No.</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ssoFormRight">
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+
+                                            </div>
+                                        </div>
+                                        <div class="inputWidthFull w-100 mt-3">
+                                            <div class="material-textfield inputWidthHalf">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Issued Date</label>
+
+                                            </div>
+                                            <div class="material-textfield w-50">
+                                                <input class="w-100" placeholder=" " type="date">
+                                                <label>Valid Till</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                              
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- EMAIL MODAL START -->
+
+    <div class="modal fade " id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ssoModalHeader">
+                    <h5 class="modal-title" id="staticBackdropLabel">User Mail Account</h5>
+                    <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body ssoModalBody">
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>Password</label>
+                        </div>
+                    </div>
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>Mail Server</label>
+                        </div>
+                    </div>
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>Signature</label>
+                        </div>
+                    </div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Enable SSL
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer ssoModalFooter">
+                    <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Clear All</button>
+                    <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">OK</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- EMAIL MODAL END -->
+
+
+    <!-- BANK DETAIL MODAL START -->
+
+    <div class="modal fade " id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ssoModalHeader">
+                    <h5 class="modal-title" id="staticBackdropLabel">Bank Detail</h5>
+                    <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body ssoModalBody">
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>Bank</label>
+                        </div>
+                    </div>
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>Account No.</label>
+                        </div>
+                    </div>
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>IFSC Code</label>
+                        </div>
+                    </div>
+                    <div class="inputWidthFull w-100 mt-3">
+                        <div class="material-textfield w-100">
+                            <input class="w-100" placeholder=" " type="text">
+                            <label>UPI</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer ssoModalFooter">
+                    <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BANK DETAIL MODAL END -->
+
+
+    <!-- SMS Settings MODAL START -->
+
+    <div class="modal fade " id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ssoModalHeader">
+                    <h5 class="modal-title" id="staticBackdropLabel">SMS Settings</h5>
+                    <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body ssoModalBody">
+                    <div class="ssoModalBodyInner">
+                        <div class="ssoModalInnerHeader">
+                            URL
+                        </div>
+                        <div class="ssoModalInnerBox">
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield w-100">
+                                    <input class="w-100" placeholder=" " type="text" />
+                                    <label>URL</label>
+                                </div>
+                            </div>
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield w-100">
+                                    <input class="w-100" placeholder=" " type="text" />
+                                    <label>Balance Enquiry</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="ssoModalBodyInner mt-2">
+                        <div class="ssoModalInnerHeader">
+                            Keywords
+                        </div>
+                        <div class="ssoModalInnerBox">
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthHalf">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>URL</label>
+                                </div>
+                                <div class="material-textfield w-50">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Sender ID</label>
+                                </div>
+                            </div>
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthHalf">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Password</label>
+                                </div>
+                                <div class="material-textfield w-50">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Message</label>
+                                </div>
+                            </div>
+                           
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield w-100">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Replacement No.</label>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="ssoModalBodyInner mt-2">
+                        <div class="ssoModalInnerHeader">
+                            Information
+                        </div>
+                        <div class="ssoModalInnerBox">
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthHalf">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>User ID</label>
+                                </div>
+                                <div class="material-textfield w-50">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Sender ID</label>
+                                </div>
+                            </div>
+                          
+                           
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield w-100">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Password</label>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer ssoModalFooter">
+                    <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SMS Settings MODAL END -->
+
+
+    <!-- WHATSAPP Settings MODAL START -->
+
+   
+    <div class="modal fade " id="exampleModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header ssoModalHeader">
+                    <h5 class="modal-title" id="staticBackdropLabel">SMS Settings</h5>
+                    <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body ssoModalBody">
+                    <div class="ssoModalBodyInner">
+                        <div class="ssoModalInnerHeader">
+                            URL
+                        </div>
+                        <div class="ssoModalInnerBox">
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield w-100">
+                                    <input class="w-100" placeholder=" " type="text" />
+                                    <label>URL</label>
+                                </div>
+                            </div>
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield w-100">
+                                    <input class="w-100" placeholder=" " type="text" />
+                                    <label>Balance Enquiry</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="ssoModalBodyInner mt-2">
+                        <div class="ssoModalInnerHeader">
+                            Keywords
+                        </div>
+                        <div class="ssoModalInnerBox">
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthHalf">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>User ID</label>
+                                </div>
+                                <div class="material-textfield w-50">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Sender ID</label>
+                                </div>
+                            </div>
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthHalf">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Attachment</label>
+                                </div>
+                                <div class="material-textfield w-50">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Password</label>
+                                </div>
+                            </div>
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthHalf">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Replacement No.</label>
+                                </div>
+                                <div class="material-textfield w-50">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Message</label>
+                                </div>
+                            </div>
+                           
+                           
+                           
+                        </div>
+                    </div>
+
+                    <div class="ssoModalBodyInner mt-2">
+                        <div class="ssoModalInnerHeader">
+                            Information
+                        </div>
+                        <div class="ssoModalInnerBox">
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthHalf">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>User ID</label>
+                                </div>
+                                <div class="material-textfield w-50">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Sender ID</label>
+                                </div>
+                            </div>
+                          
+                           
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield w-100">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Password</label>
+                                </div>
+                            </div>
+                            <div class="inputWidthFull w-100 mt-3">
+                                <div class="material-textfield inputWidthMid">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>Attachment Path</label>
+                                </div>
+                                <div class="material-textfield w-25">
+                                    <input class="w-100" placeholder=" " type="text">
+                                    <label>...</label>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer ssoModalFooter">
+                    <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Cancle</button>
+                    <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">Save</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WHATSAPP Settings MODAL END -->
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
