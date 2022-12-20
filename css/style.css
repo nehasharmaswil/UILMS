@@ -682,6 +682,24 @@ tr td{
     transition: 0.1s ease-out;
     height: 34px;
   }
+
+  .material-textfield textarea {
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #CACACA;
+    border-radius: 5px;
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+    height: 74px;
+} 
+
+.material-textfield select {
+    font-size: 14px;
+    background-color: white;
+    color: #808080;
+   
+}
   .material-textfield input:focus {
     border-color: #BD1B70;  
   }
@@ -691,6 +709,19 @@ tr td{
     transform: translateY(-50%) scale(.9);
   }
   .material-textfield input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+
+  .material-textfield textarea:focus {
+    border-color: #BD1B70;  
+  }
+  .material-textfield textarea:focus + label {
+    color: #BD1B70;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  .material-textfield textarea:not(:placeholder-shown) + label {
     top: 0;
     transform: translateY(-50%) scale(.9);
   }
