@@ -9,12 +9,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
 
     <title>SWIL</title>
 </head>
@@ -127,8 +128,35 @@
                                         <i class="bi bi-x-circle-fill"></i>
                                     </div>
                                 </a>
+                               
+                                  <div class="dropdown ssoBrachSettings">
+                                    <button class="btn btn-secondary SettingsDrpdown dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Settings
+                                    </button>
+                                    <ul class="dropdown-menu SettingsDrpdownMenu " aria-labelledby="dropdownMenuButton2">
+                                      <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"> 
+                                        <div class="dropdown-menuIcon"><i class="bi bi-envelope"></i></div> 
+                                        Email Settings</a>
+
+                                       
+                                    </li>
+                                      <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal" data-bs-target="#exampleModal1" href="#">
+                                        <div class="dropdown-menuIcon"><i class="bi bi-bank"></i></div> 
+                                        Bank Detail</a></li>
+                                      <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#">
+                                        <div class="dropdown-menuIcon"><i class="bi bi-chat-square-text"></i></div> 
+                                        SMS Settings</a></li>
+                                      <li><a class="dropdown-item DrpdownItem" data-bs-toggle="modal" data-bs-target="#exampleModal3" href="#">
+                                        <div class="dropdown-menuIcon"><i class="bi bi-whatsapp"></i></div> 
+                                        Whatsapp Settings</a></li>
+                                    </ul>
+
+                                  </div>
+                                  
                             </div>
                         </div>
+                        
+                       
                         <div class="ssoFormMainBox">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
@@ -459,16 +487,353 @@
         </div>
     </section>
 
+<!-- EMAIL MODAL START -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<div class="modal fade " id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header ssoModalHeader">
+          <h5 class="modal-title" id="staticBackdropLabel">User Mail Account</h5>
+          <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+        <div class="modal-body ssoModalBody">
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Email</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Password</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Mail Server</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Signature</label>
+                </div>
+            </div>
+            <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" value=""
+                    id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Enable SSL
+                </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Clear All</button>
+            <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">OK</button>
+          </div>
+       
+      </div>
+    </div>
+  </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- EMAIL MODAL END -->
+
+
+  <!-- BANK DETAIL MODAL START -->
+
+<div class="modal fade " id="exampleModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header ssoModalHeader">
+          <h5 class="modal-title" id="staticBackdropLabel">Bank Detail</h5>
+          <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+        <div class="modal-body ssoModalBody">
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Bank</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Account No.</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>IFSC Code</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>UPI</label>
+                </div>
+            </div>
+           
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Cancle</button>
+            <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">Save</button>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- BANK DETAIL MODAL END -->
+
+
+   <!-- SMS Settings MODAL START -->
+
+<div class="modal fade " id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header ssoModalHeader">
+          <h5 class="modal-title" id="staticBackdropLabel">SMS Settings</h5>
+          <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+        <div class="modal-body ssoModalBody">
+            <div class="ssoModalBodyInner">
+                <div class="ssoModalInnerHeader">
+                   SMS Settings
+                </div>
+          <div class="ssoModalInnerBox">
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text"/>
+                    <label>URL</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text"/>
+                    <label>Balance Enquiry</label>
+                </div>
+            </div>
+            
+          
+        </div>
+    </div>
+
+    <div class="ssoModalBodyInner">
+        <div class="ssoModalInnerHeader">
+            Keywords
+        </div>
+  <div class="ssoModalInnerBox">
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>Bank</label>
+        </div>
+    </div>
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>Account No.</label>
+        </div>
+    </div>
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>IFSC Code</label>
+        </div>
+    </div>
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>UPI</label>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="ssoModalBodyInner">
+    <div class="ssoModalInnerHeader">
+       Information
+    </div>
+<div class="ssoModalInnerBox">
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>Bank</label>
+    </div>
+</div>
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>Account No.</label>
+    </div>
+</div>
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>IFSC Code</label>
+    </div>
+</div>
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>UPI</label>
+    </div>
+</div>
+</div>
+</div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Cancle</button>
+            <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">Save</button>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- SMS Settings MODAL END -->
+
+
+   <!-- WHATSAPP Settings MODAL START -->
+
+<div class="modal fade " id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header ssoModalHeader">
+          <h5 class="modal-title" id="staticBackdropLabel">SMS Settings</h5>
+          <button type="button" class="btn-close ssoBtnClose" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+        <div class="modal-body ssoModalBody">
+            <div class="ssoModalBodyInner">
+                <div class="ssoModalInnerHeader">
+                    Whatsapp Settings
+                </div>
+          <div class="ssoModalInnerBox">
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Bank</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>Account No.</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>IFSC Code</label>
+                </div>
+            </div>
+            <div class="inputWidthFull w-100 mt-3">
+                <div class="material-textfield w-100">
+                    <input class="w-100" placeholder=" " type="text">
+                    <label>UPI</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ssoModalBodyInner">
+        <div class="ssoModalInnerHeader">
+            Keywords
+        </div>
+  <div class="ssoModalInnerBox">
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>Bank</label>
+        </div>
+    </div>
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>Account No.</label>
+        </div>
+    </div>
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>IFSC Code</label>
+        </div>
+    </div>
+    <div class="inputWidthFull w-100 mt-3">
+        <div class="material-textfield w-100">
+            <input class="w-100" placeholder=" " type="text">
+            <label>UPI</label>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="ssoModalBodyInner">
+    <div class="ssoModalInnerHeader">
+       Information
+    </div>
+<div class="ssoModalInnerBox">
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>Bank</label>
+    </div>
+</div>
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>Account No.</label>
+    </div>
+</div>
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>IFSC Code</label>
+    </div>
+</div>
+<div class="inputWidthFull w-100 mt-3">
+    <div class="material-textfield w-100">
+        <input class="w-100" placeholder=" " type="text">
+        <label>UPI</label>
+    </div>
+</div>
+</div>
+</div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary ssoBtn" data-bs-dismiss="modal">Cancle</button>
+            <button type="button" class="btn btn-primary ssoBtn ssoBtnGrey">Save</button>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- WHATSAPP Settings MODAL END -->
+
+  
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
         <script src="js/custom.js"></script>
-
-
-
+ 
 </body>
 
 </html>

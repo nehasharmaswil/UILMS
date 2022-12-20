@@ -4,7 +4,7 @@
 
 body{
     background: #f8f8f8;
-    height: 100vh;
+   
 }
 
 
@@ -385,8 +385,10 @@ body{
     color: #BD1B70;
 }
 
-.ssoLeftBox h6{
+.ssoLeftBox h6 {
     color: #BD1B70;
+    font-size: 26px;
+    font-weight: 600;
 }
 
 .ssoTableMainBox{
@@ -562,7 +564,44 @@ tr td{
     border: none;
 }
 
+.tblHoverIconBox{
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    width: 145px;
+    justify-content: space-evenly;
+    padding: 6px 0px;
+    position: absolute;
+    bottom: 0px;
+    visibility: hidden;
+    left: 130px;
+}
 
+.ssoBranchTableRowHeading tbody tr:hover td .tblHoverIconBox{
+    visibility: visible!important;
+}
+
+.ssoBranchTableRowHeading tbody tr{
+    position: relative;
+    transition: 0.8s;
+}
+
+.tblHoverIcon{
+    background-color: #FFE9F5;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.tblHoverIcon i{
+   font-size: 15px;
+   color: #BD1B70;
+}
 
 .table>:not(caption)>*>*{
     border: none;
@@ -675,6 +714,50 @@ tr td{
 
   /* INPUT BOX CSS END */
 
+  .ssoBrachSettings{
+    margin-left: 10px;
+  }
+
+  .SettingsDrpdown{
+    border-radius: 36px;
+    background-color: #fff;
+    border: 2px solid #e7e7e7;
+    color: #808080;
+  }
+
+  .SettingsDrpdown:hover{
+    background-color: #ececec;
+    color: #808080;
+    border: 2px solid #e7e7e7;
+  }
+
+  .SettingsDrpdown:focus{
+    background-color: #fff;
+    color: #BD1B70;
+    border: 2px solid #BD1B70;
+    box-shadow: none;
+  }
+
+  
+
+  .DrpdownItem{
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-menuIcon{
+    margin-right: 10px;
+  }
+
+  .dropdown-menuIcon i{
+    color: #BD1B70;
+  }
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #202020;
+    background-color: #FFE9F5;
+}
+
   .ssoYellowBtn{
     background-color: #F3B844;
     color: #fff;
@@ -782,3 +865,46 @@ tr td{
 
 
    /* **********************************ROLE PAGE CSS END****************************************** */
+
+
+
+   /* **********************************Modal CSS Start****************************************** */
+
+   .ssoModalHeader{
+    background-color: #BD1B70;
+    color: #fff;
+   }
+
+   .ssoBtnClose{
+    
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .ssoBtnClose i{
+      font-size: 30px;
+      color: #BD1B70;
+   }
+
+   .modal-content{
+      border: none;
+   }
+
+   .ssoModalInnerHeader{
+    background-color: #FFE9F5;
+    color: #BD1B70;
+    padding: 6px 10px 6px 10px;
+
+   }
+
+   .ssoModalBodyInner{
+    background-color: #fff;
+    box-shadow: 2px 0px 60px rgb(0 0 0 / 15%);
+    
+   }
+
+   .ssoModalInnerBox{
+    padding: 0px 10px 10px 10px;
+   }
