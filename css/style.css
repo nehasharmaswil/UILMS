@@ -625,7 +625,7 @@ tr td{
     box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.05);
     padding: 0px 20px 20px 20px;
     display: flex;
-    align-items: baseline;
+    align-items: end;
     justify-content: space-between;
     border-radius: 8px
 }
