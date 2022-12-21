@@ -814,16 +814,16 @@ tr td{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 130px;
+    height: 120px;
   }
 
   .ssoinnerBoxFooterLeft{
-    width: 69%;
+    width: 60%;
     height: 100%;
   }
 
   .ssoinnerBoxFooterRight{
-    width: 30%;
+    width: 39%;
     height: 100%;
   }
 
