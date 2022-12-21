@@ -972,6 +972,13 @@ tr td{
     color: #BD1B70;
 }
 
+.allow {
+    
+    width: 100%!important;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
      /* **********************************USER DETAIL PAGE CSS END****************************************** */
 
 
