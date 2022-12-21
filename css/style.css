@@ -696,10 +696,14 @@ tr td{
 } 
 
 .material-textfield select {
-    font-size: 14px;
-    background-color: white;
-    color: #808080;
-   
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #CACACA;
+    border-radius: 5px;  
+    padding: 1rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+    height: 34px;
 }
   .material-textfield input:focus {
     border-color: #BD1B70;  
@@ -710,6 +714,18 @@ tr td{
     transform: translateY(-50%) scale(.9);
   }
   .material-textfield input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  .material-textfield select:focus {
+    border-color: #BD1B70;  
+  }
+  .material-textfield select:focus + label {
+    color: #BD1B70;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  .material-textfield select:not(:placeholder-shown) + label {
     top: 0;
     transform: translateY(-50%) scale(.9);
   }
@@ -857,6 +873,8 @@ tr td{
     padding: 0px 0px 0px 15px;
     border-radius: 6px 6px 0px 0px;
   }
+
+  
 
  /* **********************************BRANCH DETAIL PAGE CSS END****************************************** */
 
