@@ -865,6 +865,12 @@ tr td{
 
 .RoleCheckBox{
     display: flex;
+    
+}
+
+.form-check label{
+    margin-top: 2px;
+    margin-left: 5px;
 }
 
 .form-select:focus{
