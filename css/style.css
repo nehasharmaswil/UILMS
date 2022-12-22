@@ -7,7 +7,9 @@ body{
    
 }
 
-
+.SSO_dashboard{
+    height: 90vh;
+}
 
 .SSO_dashboard_left_section{
     background-color: #fff;
@@ -33,7 +35,7 @@ body{
 .SSO_dashboard_left_section_row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     
 }
@@ -46,7 +48,7 @@ body{
    width: 30%;
    height: 186px;
    border-radius: 8px;
-   margin: 20px 0px;
+   margin: 12px 12px;
    text-decoration: none;
    transition: all 0.8s;
 }
@@ -87,15 +89,15 @@ body{
 .SSO_dashboard_right_section{
     background: linear-gradient(180deg, #D78CF3 0%, #7B88FE 100%);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
-    padding: 10px 25px 25px 25px;
-    height: 100vh;
+    padding: 10px 25px 0px 25px;
+    height: 100%;
 }
 
 .SSO_dashboard_right_section_header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .SSO_dashboard_right_section_header p{
@@ -104,13 +106,13 @@ body{
 }
 
 .SSO_dashboard_right_section_header img{
-    width: 65%;
+    width: 50%;
 }
 
 .SSO_dashboard_right_section_list{
     list-style: none;
     padding-left: 0px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .SSO_dashboard_right_section_company_info{
@@ -142,7 +144,7 @@ body{
 .SSO_dashboard_right_section_company_info h2{
     color: #fff;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 .SSO_dashboard_right_section_list_item{
@@ -170,7 +172,7 @@ body{
 }
 
 .swil_contact_info{
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .swil_social_links h5{
