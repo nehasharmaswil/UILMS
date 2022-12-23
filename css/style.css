@@ -947,6 +947,18 @@ tr td{
     padding: 10px 10px;
 }
 
+.ssoBtnStroke{
+    background-color: #fff;
+    border-color: #808080;
+    color: #808080;
+}
+
+.ssoBtnStroke:hover{
+ 
+    border-color: #BD1B70;
+    color: #BD1B70;
+}
+
 .inputWidthFull .form-check{
     width: 33%;
 }
