@@ -885,7 +885,14 @@ tr td{
 
 .RoleCheckBox{
     display: flex;
-    
+    flex-wrap: wrap;
+   
+}
+
+.RoleCheckBox .form-check{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .form-check label{
